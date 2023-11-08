@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: black;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.universe-container {
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    /* border: 2px solid gray; */
+    margin: 0 auto;
+    position: relative;
+}
+.planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    border: 1px solid gray;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotation 9s linear infinite;
+}
+.planet:nth-child(2) {
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    animation: rotation 8s linear infinite;
+}
+.planet:nth-child(3) {
+    width: 70%;
+    height: 70%;
+    transform: translate(-50%, -50%);
+    animation: rotation 7s linear infinite;
+}
+.planet:nth-child(4) {
+    width: 60%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    animation: rotation 6s linear infinite;
+}
+.planet:nth-child(5) {
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotation 5s linear infinite;
+}
+.planet:nth-child(6) {
+    width: 40%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+    animation: rotation 4s linear infinite;
+}
+.planet:nth-child(7) {
+    width: 30%;
+    height: 30%;
+    transform: translate(-50%, -50%);
+    animation: rotation 3s linear infinite;
+}
+.planet:nth-child(8) {
+    width: 20%;
+    height: 20%;
+    transform: translate(-50%, -50%);
+    animation: rotation 2s linear infinite;
+}
+.planet:nth-child(9) {
+    width: 9%;
+    height: 9%;
+    background-color: #ff1100ea;
+    border: none;
+    transform: translate(-50%, -50%);
+    animation: rotation 2s linear infinite;
+}
+
+
+.neptune {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(144, 221, 226);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+.urenous {
+    width: 30px;
+    height: 30px;
+    background-color: #00eeff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%);
+}
+.satarn {
+    width: 30px;
+    height: 30px;
+    background-color: #0004ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%);
+}
+.satarn::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid #6f8df0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.jupiter {
+    width: 55px;
+    height: 55px;
+    background-color: #ffc400;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%);
+}
+.march {
+    width: 30px;
+    height: 30px;
+    background-color: #ff5e00;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%);
+}
+.earth {
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(to right, green, #00eeff, #1900ff);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%);
+}
+.moon {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid gray;
+    animation: rotation 2s linear infinite;
+}
+.moon-satellite {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background-color: gray;
+}
+.venus {
+    width: 20px;
+    height: 20px;
+    background-color: #bbff00;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%);
+}
+.merque {
+    width: 18px;
+    height: 18px;
+    background-color: #ff8800;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+
+@keyframes rotation {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
